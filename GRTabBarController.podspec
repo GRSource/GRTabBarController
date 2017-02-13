@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/GRSource/GRTabBarController"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author    = "GRSource"
-  s.platform     = :ios, “8.0”
+  s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/GRSource/GRTabBarController.git", :tag => “v1.0.3” }
 
   s.source_files  = "GRTabBarController", "GRTabBarController/**/*.swift"
