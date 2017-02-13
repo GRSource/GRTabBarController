@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, “8.0”
   s.source       = { :git => "https://github.com/GRSource/GRTabBarController.git", :tag => “v1.0.3” }
 
-  s.source_files  = "GRTabBarController", "GRTabBarController/**/*.{swift}”
+  s.source_files  = "GRTabBarController", "GRTabBarController/**/*.swift"
   s.requires_arc = true
 end
