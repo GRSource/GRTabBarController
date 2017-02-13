@@ -7,25 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40CFFA3BBFC23DA0B815F402 /* Pods_GRTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFCB98138573EADDDC0C6D6 /* Pods_GRTabBarController.framework */; };
-		A32894111E4C46DC003453B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894101E4C46DC003453B6 /* AppDelegate.swift */; };
-		A32894131E4C46DC003453B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894121E4C46DC003453B6 /* ViewController.swift */; };
-		A32894161E4C46DD003453B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32894141E4C46DD003453B6 /* Main.storyboard */; };
-		A32894181E4C46DD003453B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32894171E4C46DD003453B6 /* Assets.xcassets */; };
-		A328941B1E4C46DD003453B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32894191E4C46DD003453B6 /* LaunchScreen.storyboard */; };
+		A32894271E4C51BA003453B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894231E4C51BA003453B6 /* AppDelegate.swift */; };
+		A32894281E4C51BA003453B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32894241E4C51BA003453B6 /* Assets.xcassets */; };
+		A32894291E4C51BA003453B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32894261E4C51BA003453B6 /* Info.plist */; };
+		A328942B1E4C52BD003453B6 /* GRTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328942A1E4C52BD003453B6 /* GRTabBarItem.swift */; };
+		A328942D1E4C52D4003453B6 /* GRTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328942C1E4C52D4003453B6 /* GRTabBar.swift */; };
+		A328942F1E4C52FB003453B6 /* GRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328942E1E4C52FB003453B6 /* GRTabBarController.swift */; };
+		A32894321E4C5359003453B6 /* GRFirst_RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894311E4C5359003453B6 /* GRFirst_RootViewController.swift */; };
+		A32894341E4C536B003453B6 /* GRSecond_RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894331E4C536B003453B6 /* GRSecond_RootViewController.swift */; };
+		A32894361E4C537C003453B6 /* GRThird_RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894351E4C537C003453B6 /* GRThird_RootViewController.swift */; };
+		A32894381E4C5E97003453B6 /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894371E4C5E97003453B6 /* RootTabViewController.swift */; };
+		A328943E1E4D44EC003453B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A328943C1E4D44EC003453B6 /* LaunchScreen.storyboard */; };
+		A32894421E4DA8CF003453B6 /* GRDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32894411E4DA8CF003453B6 /* GRDetailViewController.swift */; };
+		A3FF0FC91E4DABE200963412 /* UIViewController+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF0FC81E4DABE200963412 /* UIViewController+Swizzle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A328940D1E4C46DC003453B6 /* GRTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32894101E4C46DC003453B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A32894121E4C46DC003453B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A32894151E4C46DD003453B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A32894171E4C46DD003453B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A328941A1E4C46DD003453B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A328941C1E4C46DD003453B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB93C7FB8CF940861890A15C /* Pods-GRTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRTabBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GRTabBarController/Pods-GRTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
-		AC5E9DD9E0DDAB0B1EA5DA56 /* Pods-GRTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRTabBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-GRTabBarController/Pods-GRTabBarController.release.xcconfig"; sourceTree = "<group>"; };
-		CBFCB98138573EADDDC0C6D6 /* Pods_GRTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32894231E4C51BA003453B6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A32894241E4C51BA003453B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A32894261E4C51BA003453B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A328942A1E4C52BD003453B6 /* GRTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRTabBarItem.swift; sourceTree = "<group>"; };
+		A328942C1E4C52D4003453B6 /* GRTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRTabBar.swift; sourceTree = "<group>"; };
+		A328942E1E4C52FB003453B6 /* GRTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRTabBarController.swift; sourceTree = "<group>"; };
+		A32894311E4C5359003453B6 /* GRFirst_RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRFirst_RootViewController.swift; sourceTree = "<group>"; };
+		A32894331E4C536B003453B6 /* GRSecond_RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRSecond_RootViewController.swift; sourceTree = "<group>"; };
+		A32894351E4C537C003453B6 /* GRThird_RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRThird_RootViewController.swift; sourceTree = "<group>"; };
+		A32894371E4C5E97003453B6 /* RootTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
+		A328943D1E4D44EC003453B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A32894411E4DA8CF003453B6 /* GRDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRDetailViewController.swift; sourceTree = "<group>"; };
+		A3FF0FC81E4DABE200963412 /* UIViewController+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,26 +44,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CFFA3BBFC23DA0B815F402 /* Pods_GRTabBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		357C5302E837BB9531A1A0B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AB93C7FB8CF940861890A15C /* Pods-GRTabBarController.debug.xcconfig */,
-				AC5E9DD9E0DDAB0B1EA5DA56 /* Pods-GRTabBarController.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		454F4E9653C132397554BD3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBFCB98138573EADDDC0C6D6 /* Pods_GRTabBarController.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -60,9 +60,9 @@
 		A32894041E4C46DC003453B6 = {
 			isa = PBXGroup;
 			children = (
+				A32894221E4C50F6003453B6 /* Example */,
 				A328940F1E4C46DC003453B6 /* GRTabBarController */,
 				A328940E1E4C46DC003453B6 /* Products */,
-				357C5302E837BB9531A1A0B5 /* Pods */,
 				454F4E9653C132397554BD3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -78,14 +78,44 @@
 		A328940F1E4C46DC003453B6 /* GRTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				A32894101E4C46DC003453B6 /* AppDelegate.swift */,
-				A32894121E4C46DC003453B6 /* ViewController.swift */,
-				A32894141E4C46DD003453B6 /* Main.storyboard */,
-				A32894171E4C46DD003453B6 /* Assets.xcassets */,
-				A32894191E4C46DD003453B6 /* LaunchScreen.storyboard */,
-				A328941C1E4C46DD003453B6 /* Info.plist */,
+				A328942A1E4C52BD003453B6 /* GRTabBarItem.swift */,
+				A328942C1E4C52D4003453B6 /* GRTabBar.swift */,
+				A328942E1E4C52FB003453B6 /* GRTabBarController.swift */,
+				A3FF0FC81E4DABE200963412 /* UIViewController+Swizzle.swift */,
 			);
 			path = GRTabBarController;
+			sourceTree = "<group>";
+		};
+		A32894221E4C50F6003453B6 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A32894301E4C5324003453B6 /* Controllers */,
+				A32894231E4C51BA003453B6 /* AppDelegate.swift */,
+				A32894241E4C51BA003453B6 /* Assets.xcassets */,
+				A32894251E4C51BA003453B6 /* Base.lproj */,
+				A32894261E4C51BA003453B6 /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		A32894251E4C51BA003453B6 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A328943C1E4D44EC003453B6 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		A32894301E4C5324003453B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A32894311E4C5359003453B6 /* GRFirst_RootViewController.swift */,
+				A32894331E4C536B003453B6 /* GRSecond_RootViewController.swift */,
+				A32894351E4C537C003453B6 /* GRThird_RootViewController.swift */,
+				A32894371E4C5E97003453B6 /* RootTabViewController.swift */,
+				A32894411E4DA8CF003453B6 /* GRDetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,12 +125,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A328941F1E4C46DD003453B6 /* Build configuration list for PBXNativeTarget "GRTabBarController" */;
 			buildPhases = (
-				035ACA85500B6CAD3CB28D56 /* [CP] Check Pods Manifest.lock */,
 				A32894091E4C46DC003453B6 /* Sources */,
 				A328940A1E4C46DC003453B6 /* Frameworks */,
 				A328940B1E4C46DC003453B6 /* Resources */,
-				25E0A5F8A2E9446C174AE467 /* [CP] Embed Pods Frameworks */,
-				413C19961EED96C544C2747A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +151,7 @@
 					A328940C1E4C46DC003453B6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6XVY45KN56;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,87 +179,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A328941B1E4C46DD003453B6 /* LaunchScreen.storyboard in Resources */,
-				A32894181E4C46DD003453B6 /* Assets.xcassets in Resources */,
-				A32894161E4C46DD003453B6 /* Main.storyboard in Resources */,
+				A328943E1E4D44EC003453B6 /* LaunchScreen.storyboard in Resources */,
+				A32894291E4C51BA003453B6 /* Info.plist in Resources */,
+				A32894281E4C51BA003453B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		035ACA85500B6CAD3CB28D56 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		25E0A5F8A2E9446C174AE467 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRTabBarController/Pods-GRTabBarController-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		413C19961EED96C544C2747A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRTabBarController/Pods-GRTabBarController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32894091E4C46DC003453B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32894131E4C46DC003453B6 /* ViewController.swift in Sources */,
-				A32894111E4C46DC003453B6 /* AppDelegate.swift in Sources */,
+				A32894381E4C5E97003453B6 /* RootTabViewController.swift in Sources */,
+				A3FF0FC91E4DABE200963412 /* UIViewController+Swizzle.swift in Sources */,
+				A32894361E4C537C003453B6 /* GRThird_RootViewController.swift in Sources */,
+				A328942F1E4C52FB003453B6 /* GRTabBarController.swift in Sources */,
+				A328942D1E4C52D4003453B6 /* GRTabBar.swift in Sources */,
+				A32894421E4DA8CF003453B6 /* GRDetailViewController.swift in Sources */,
+				A32894271E4C51BA003453B6 /* AppDelegate.swift in Sources */,
+				A32894341E4C536B003453B6 /* GRSecond_RootViewController.swift in Sources */,
+				A328942B1E4C52BD003453B6 /* GRTabBarItem.swift in Sources */,
+				A32894321E4C5359003453B6 /* GRFirst_RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A32894141E4C46DD003453B6 /* Main.storyboard */ = {
+		A328943C1E4D44EC003453B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A32894151E4C46DD003453B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A32894191E4C46DD003453B6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A328941A1E4C46DD003453B6 /* Base */,
+				A328943D1E4D44EC003453B6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -334,25 +314,28 @@
 		};
 		A32894201E4C46DD003453B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB93C7FB8CF940861890A15C /* Pods-GRTabBarController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6XVY45KN56;
-				INFOPLIST_FILE = GRTabBarController/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GRSource.GRTabBarController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A32894211E4C46DD003453B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5E9DD9E0DDAB0B1EA5DA56 /* Pods-GRTabBarController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6XVY45KN56;
-				INFOPLIST_FILE = GRTabBarController/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GRSource.GRTabBarController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
