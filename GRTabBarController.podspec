@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description  = "GRTabBarController is iPad and iPhone compatible. Supports landscape and portrait orientations and can be used inside UINavigationController."
   s.homepage     = "https://github.com/GRSource/GRTabBarController"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author       = { "" => "delonalain2016@gmail.com" }
+  s.author       = { "delon alain" => "heyuzu2007@gmail.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/GRSource/GRTabBarController.git", :tag => "v1.0.1" }
-  s.source_files  = 'GRTabBarController', 'GRTabBarController/**/*.{h,m}'
+  s.source_files  = 'GRTabBarController', 'GRTabBarController/**/*.{swift}’
   s.framework = 'UIKit', 'CoreGraphics', 'Foundation'
   s.requires_arc = true
 end
