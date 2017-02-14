@@ -71,13 +71,8 @@ extension UIViewController {
         
         let viewControllerName = NSStringFromClass(type(of: self)) as NSString
         if viewControllerName.range(of: "_RootViewController").location != NSNotFound {
-            let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
-            let currentNavigationVC = (kAppDelegate.window!.rootViewController as! RootTabViewController).selectedViewController as! UINavigationController
-            if currentNavigationVC == self.navigationController {
-                self.tabBarImageView?.isHidden = true
-                self.gr_tabBarController?.tabBarHidden = false
-            }
-            
+            self.tabBarImageView?.isHidden = true
+            self.gr_tabBarController?.tabBarHidden = false
         }
         if let childVCs = self.navigationController?.childViewControllers {
             if childVCs.count > 1 {
