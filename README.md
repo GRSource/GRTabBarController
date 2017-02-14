@@ -1,6 +1,6 @@
 # GRTabBarController
 
-[![iPhone screenshot]](Screenshots/iPhone.png)
+[![iPhone screenshot](Screenshots/iPhone.png)]
 
 * Supports iPad and iPhone
 * Can be used inside UINavigationController
