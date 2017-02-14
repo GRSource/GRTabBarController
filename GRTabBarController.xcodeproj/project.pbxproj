@@ -22,7 +22,6 @@
 		A3309F1F1E51973F005336B2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A3309F181E51973F005336B2 /* LICENSE */; };
 		A3309F201E51973F005336B2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A3309F191E51973F005336B2 /* README.md */; };
 		A3309F241E51973F005336B2 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = A3309F1E1E51973F005336B2 /* iPhone.png */; };
-		A3309F261E529630005336B2 /* iPhone-small.png in Resources */ = {isa = PBXBuildFile; fileRef = A3309F251E529630005336B2 /* iPhone-small.png */; };
 		A3FF0FC91E4DABE200963412 /* UIViewController+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF0FC81E4DABE200963412 /* UIViewController+Swizzle.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		A3309F181E51973F005336B2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A3309F191E51973F005336B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3309F1E1E51973F005336B2 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = "<group>"; };
-		A3309F251E529630005336B2 /* iPhone-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone-small.png"; sourceTree = "<group>"; };
 		A3FF0FC81E4DABE200963412 /* UIViewController+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				A3309F1E1E51973F005336B2 /* iPhone.png */,
-				A3309F251E529630005336B2 /* iPhone-small.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 			files = (
 				A3309F241E51973F005336B2 /* iPhone.png in Resources */,
 				A328943E1E4D44EC003453B6 /* LaunchScreen.storyboard in Resources */,
-				A3309F261E529630005336B2 /* iPhone-small.png in Resources */,
 				A32894291E4C51BA003453B6 /* Info.plist in Resources */,
 				A3309F1F1E51973F005336B2 /* LICENSE in Resources */,
 				A32894281E4C51BA003453B6 /* Assets.xcassets in Resources */,
