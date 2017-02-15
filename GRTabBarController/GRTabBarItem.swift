@@ -85,6 +85,42 @@ class GRTabBarItem: UIControl {
         
     }
     
+    //MARK: - Badge configuration
+    
+    /**
+     * Text that is displayed in the upper-right corner of the item with a surrounding background.
+     */
+    var badgeValue: String = "0" {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
+    /**
+     * Image used for background of badge.
+     */
+//    var badgeBackgroundImage: UIImage?
+    
+    /**
+     * Color used for badge's background.
+     */
+    var badgeBackgroundColor: UIColor = .red
+    
+    /**
+     * Color used for badge's text.
+     */
+    var badgeTextColor: UIColor = .white
+    
+    /**
+     * The offset for the rectangle around the tab bar item's badge.
+     */
+    var badgePositionAdjustment: UIOffset = .zero
+    
+    /**
+     * Font used for badge's text.
+     */
+    var badgeTextFont = UIFont.systemFont(ofSize: 12)
+    
     //MARK: - Image configuration
     
     /**
@@ -143,6 +179,7 @@ class GRTabBarItem: UIControl {
         }
     }
 
+    
     override func draw(_ rect: CGRect) {
         if self.selectedImage == nil && self.unselectedImage == nil {
             return
@@ -181,6 +218,33 @@ class GRTabBarItem: UIControl {
             context?.setFillColor((titleAttributes![NSForegroundColorAttributeName] as! UIColor).cgColor)
             (title! as NSString).draw(in: CGRect(x: CGFloat(roundf(Float(frameSize.width / 2 - titleSize.width / 2))) + titlePositionAdjustment.horizontal, y: imageStartingY + imageSize.height + titlePositionAdjustment.vertical, width: titleSize.width, height: titleSize.height), withAttributes: titleAttributes)
         }
+        
+        //Draw badges
+        
+        let badgeValueStr = badgeValue as NSString
+        if badgeValueStr.integerValue != 0 {
+            var badgeSize = badgeValueStr.boundingRect(with: CGSize(width: frameSize.width, height: 20), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: self.badgeTextFont], context: nil).size
+            
+            let textOffset: CGFloat = 2.0
+            if badgeSize.width < badgeSize.height {
+                badgeSize = CGSize(width: badgeSize.height, height: badgeSize.height)
+            }
+            
+            let badgeBackgroundFrame = CGRect(x: CGFloat(roundf(Float(frameSize.width / 2 + (image!.size.width / 2) * 0.9))) + self.badgePositionAdjustment.horizontal, y: textOffset + self.badgePositionAdjustment.vertical, width: badgeSize.width + 2 * textOffset, height: badgeSize.height + 2 * textOffset)
+            
+            context?.setFillColor(self.badgeBackgroundColor.cgColor)
+            context?.fillEllipse(in: badgeBackgroundFrame)
+            context?.setFillColor(self.badgeTextColor.cgColor)
+            
+            let badgeTextStyle = NSMutableParagraphStyle()
+            badgeTextStyle.lineBreakMode = .byWordWrapping
+            badgeTextStyle.alignment = .center
+            let badgeTextAttributes: [String: Any] = [NSFontAttributeName: self.badgeTextFont, NSForegroundColorAttributeName: self.badgeTextColor, NSParagraphStyleAttributeName: badgeTextStyle]
+            badgeValueStr.draw(in: CGRect(x: badgeBackgroundFrame.origin.x + textOffset, y: badgeBackgroundFrame.origin.y + textOffset, width: badgeSize.width, height: badgeSize.height), withAttributes: badgeTextAttributes)
+            
+        }
+        
+        
         context?.restoreGState()
     }
 }

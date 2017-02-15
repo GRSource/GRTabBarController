@@ -13,6 +13,7 @@ class GRFirst_RootViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.gr_tabBarItem?.badgeValue = "1"
         self.title = "一"
         let myTableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height-self.gr_tabBarController!.tabBar.tabbarHeight), style: .plain)
         myTableView.dataSource = self

@@ -184,6 +184,13 @@ class GRTabBarController: UIViewController, GRTabBarProtocol {
         self.delegate?.tabBarController(self, didSelectViewController: self.viewControllers![index])
     }
     
+    func indexForViewController(_ viewController: UIViewController) -> Int {
+        var searchedController = viewController
+        if searchedController.navigationController != nil {
+            searchedController = searchedController.navigationController!
+        }
+        return (self.viewControllers?.index(of: searchedController))!
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -233,5 +240,24 @@ extension UIViewController {
         objc_setAssociatedObject(self, &AssociatedKeys_VC.DescriptiveName_VC, tabBarController, .OBJC_ASSOCIATION_ASSIGN)
     }
 
+    var gr_tabBarItem: GRTabBarItem? {
+        get {
+            let tabBarController = self.gr_tabBarController
+            let index = tabBarController?.indexForViewController(self)
+            return tabBarController?.tabBar.items?[index!]
+        }
+        set {
+            let tabBarController = self.gr_tabBarController
+            if tabBarController == nil {
+                return
+            }
+            
+            let tabBar = tabBarController?.tabBar
+            let index = tabBarController?.indexForViewController(self)
+            
+            let tabBarItems = NSMutableArray.init(array: (tabBar?.items)!)
+            tabBarItems.replaceObject(at: index!, with: tabBarItem)
+        }
+    }
 }
 
